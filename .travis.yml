@@ -4,3 +4,14 @@ dist: jammy
 python:
   - "3.11"
 script: true
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: "Encrypted <access-key-id>=AKIAYIMDP2GLKH3WBUP6"
+  secret_access_key:
+    secure: "Encypted <secret-access-key>=lTm0czPMsYFIqNysBpHArejYR9LEpONiAtdx6g7US"
+  region: "us-west-2"
+  app: "example-app-name"
+  env: "example-app-environment"
+  bucket_name: "the-target-S3-bucket"
