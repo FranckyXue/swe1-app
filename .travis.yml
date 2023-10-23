@@ -22,8 +22,8 @@ script:
 
 deploy:
   - provider: elasticbeanstalk
-    access_key_id: $AWS_ACCESS_KEY_ID
-    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    access_key_id: "AKIAYIMDP2GLJASYR4ND"
+    secret_access_key: "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"
     region: "us-west-2"
     app: "swe_app2"
     env: "swe-app-env2"
