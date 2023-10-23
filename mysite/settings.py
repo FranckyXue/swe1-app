@@ -89,7 +89,7 @@ va="django.contrib.auth.password_validation.UserAttributeSimilarityValidator"
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        "NAME": va,
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa:E501
     },
     {
         "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
